@@ -9,45 +9,74 @@
   <title>Frontend Mentor | Body Mass Index Calculator</title>
 </head>
 <body>
-    <Header>
-        <img src="images/logo.svg" alt="logo">
+    <div class="container">
+        <Header>
+            <div class="header-content">
+                <img src="images/logo.svg" alt="logo">
+                <div class="header-text">
+                    <h1>Body Mass Index Calculator</h1>
+                    <p>Better understand your weight in relation to your height using our 
+                        body mass index (BM) calculator. While BMI is not the sole determinant 
+                        of a healthy weight, it offers a valuable starting point to evaluate 
+                        your overall health and well-being.</p>
+                </div>
+            </div>
+                <form action="" class="card">
+                    <h4>Enter your details below</h4>
+                    <div class="units-container">
+                        <label for="metric">
+                            <input type="radio" name="unit" id="metric">Metric
+                        </label>
+                        <label for="imperial">
+                            <input type="radio" name="unit" id="imperial">Imperial
+                        </label>
+                    </div>
+
+                    <div class="measurements-container metric">
+                        <label for="height">
+                            <span>Height</span>
+                            <div class="input-wrapper">
+                                <input type="number" name="height" id="heightCM" autocomplete="OFF">
+                                <label for="height">cm</label>
+                            </div>
+                        </label>
+            
+                        <label for="weight">
+                            <span>Weight</span>
+                            <div class="input-wrapper">
+                                <input type="number" name="weight" id="weightCM" autocomplete="OFF">
+                                <label for="weight">kg</label>
+                            </div>
+                        </label>
+            
+            
+            
+                    </div>
+                </form>
+        </Header>    
+    </div>
+<!--    
+        
 
         <section>
-            <h1>Body Mass Index Calculator</h1>
-            <p>Better understand your weight in relation to your height using our 
-                body mass index (BM) calculator. While BMI is not the sole determinant 
-                of a healthy weight, it offers a valuable starting point to evaluate 
-                your overall health and well-being.</p>
+            
         </section>
 
         <section>
-            <h4>Enter your details below</h4>
             
-            <label>
-                <input type="radio">  Metric
-            </label>
-            <label>
-                <input type="radio">  Imperial
-            </label>
+            
+            
 
             <h4>Welcome!</h4>
             <p>Enter your height and weight and you'll see your BMI results here</p>
         </section>
 
         <section>
-            <label>Height
-                <input type="number" min="0" max="400" placeholder="cm">
-            </label>
-
-            <label>Weight
-                <input type="number" min="0" max="400" placeholder="kg">
-            </label>
-
-            <p>Your BMI is...<!-- add score --></p>
-            <p>Your BMI suggests you're <!-- add classification -->.</p>
-            <p>Your ideal weight is between <!-- add range -->.</p>
+            <p>Your BMI is... add score </p>
+            <p>Your BMI suggests you're .</p>
+            <p>Your ideal weight is between .</p>
         </section>
-    </Header>
+    
 
     <main>
         <section>
@@ -125,6 +154,7 @@
                 lower BMIs than others. To learn more, it is advised to discuss this with your 
                 GP or practice nurse.</p>
         </section>
-    </main>
+    </main>-->
+    <script src="script.js"></script>
 </body>
 </html>
