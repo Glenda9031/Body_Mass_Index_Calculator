@@ -1,0 +1,17 @@
+/* Desktop styles */
+
+@media screen and (min-width: 1200px) {
+    /* General styles */
+
+    h1 {
+        font-size: 64px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    header {
+        height: 737px;
+    }
+}
