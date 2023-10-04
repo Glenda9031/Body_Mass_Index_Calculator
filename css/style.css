@@ -1,3 +1,5 @@
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,9 +8,9 @@
   }
   
 :root {
-    --gunmetal: hsl(215, 31%, 21%);
+    --header-background: hsl(211, 100%, 95%);
     --white: #fff;
-    --dark-electric-blue: hsla(215, 17%, 44%, 1);
+    --welcome-background: hsla(211, 100%, 50%, 1);
   }
   
 body {
@@ -19,20 +21,46 @@ body {
 
 .container {
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    width: 100%;
     margin: 0 auto;
     padding: 0 32px;
   }
 
-  h1 {
-    font-size: 54px;
-  }
-
-header {
+.header-content {
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    
+/*    flex-direction: column;*/
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: var(--header-background);
+    margin: 1.5rem 4rem;
+    padding: 1.5rem 1.5rem;
+    min-width: 500px;
+    width: 100%;
 }
 
-header img{
+header img {
     width: 40px;
     height: 40px;
+    margin-bottom: 1.5rem;
 }
 
+h1 {
+  font-size: 35px;
+  margin-bottom: 1.5rem;
+}
+
+.header-text p {
+  font-size: .70rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  display: flex;
+    min-width: 500px;
+}
