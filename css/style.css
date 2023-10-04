@@ -1,4 +1,38 @@
-@import url("fonts/Inter-VariableFont_slnt,wght.tff");
-@import url("styles.base-styles.css");
-@import url("styles.tablet-styles.css");
-@import url("styles.desktop-styles.css");
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+  
+:root {
+    --gunmetal: hsl(215, 31%, 21%);
+    --white: #fff;
+    --dark-electric-blue: hsla(215, 17%, 44%, 1);
+  }
+  
+body {
+    font-family: 'Inter', sans-serif;
+    caret-color: transparent;
+    font-weight: 400;
+  }
+
+.container {
+    display: grid;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+  h1 {
+    font-size: 54px;
+  }
+
+header {
+    display: grid;
+}
+
+header img{
+    width: 40px;
+    height: 40px;
+}
+
